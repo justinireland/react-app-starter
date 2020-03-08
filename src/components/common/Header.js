@@ -9,6 +9,8 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    position: 'absolute',
+    top: 0,
     width: '100%'
   }         
 })

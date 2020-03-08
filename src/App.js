@@ -10,9 +10,11 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
     maxWidth: 500,
     minWidth: 300,    
-    margin: 'auto'
+    margin: 'auto',
+    height: '100%'
   }         
 })
 

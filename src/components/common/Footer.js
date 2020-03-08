@@ -4,7 +4,12 @@ import { createUseStyles } from 'react-jss'
 const useStyles = createUseStyles({    
   footer: {    
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    position: 'absolute',
+    alignItems: 'center',
+    justifyContent: 'center',
+    bottom: 0,
+    width: '100%'
   }         
 })
 
