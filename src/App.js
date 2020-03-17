@@ -1,6 +1,6 @@
 import React from 'react'
 import { createUseStyles } from 'react-jss'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 import Home from './components/views/home'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
@@ -23,13 +23,11 @@ export default function App() {
 
   return (
     <div className={classes.app}>
-      <Header />
-      <Router>
-        <Switch>        
-          <Route exact path="/" component={Home} />                           
-          <Route exact path="*" component={Home} />
-        </Switch>      
-      </Router> 
+      <Header />      
+      <Switch>        
+        <Route exact path="/" component={Home} />                           
+        <Route exact path="*" component={Home} />
+      </Switch>    
       <Footer />        
     </div>
   )
